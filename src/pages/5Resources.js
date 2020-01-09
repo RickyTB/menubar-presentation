@@ -11,7 +11,7 @@ const Resources = () => {
             <div className="container">
                 <Card className="text-center">
                     <Title>menubar.ricardobaquero.com</Title>
-                    <a className="py-1" href="/WEB_menubar.zip">Proyecto Netbeans</a>
+                    <a className="py-1" href="/WEB_Menubar.zip">Proyecto Netbeans</a>
                     <a className="py-1" href="/simple.xhtml">Ejemplo Simple XHTML</a>
                     <a className="py-1" href="/conbean.xhtml">Ejemplo con Bean XHTML</a>
                     <a className="py-1" href="/ajax.xhtml">Ejemplo Ajax XHTML</a>

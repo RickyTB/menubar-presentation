@@ -1,21 +1,22 @@
 import React from "react";
-import styled from "styled-components";
 
 import Page from "../components/Page/Page";
 import Title from "../components/Title/Title";
-
-const PageTitle = styled(Title)`
-  color: #fff;
-  font-size: 80px;
-  -webkit-text-stroke: 4px #000000;
-`;
+import Card from "../components/Card/Card";
 
 const Resources = () => {
     return (
         <Page>
             <Title align="left" color="white" className="pt-4 pb-2">Recursos</Title>
             <div className="container">
-                <PageTitle>menubar.ricardobaquero.com</PageTitle>
+                <Card className="text-center">
+                    <Title>menubar.ricardobaquero.com</Title>
+                    <a className="py-1" href="/WEB_menubar.zip">Proyecto Netbeans</a>
+                    <a className="py-1" href="/simple.xhtml">Ejemplo Simple XHTML</a>
+                    <a className="py-1" href="/conbean.xhtml">Ejemplo con Bean XHTML</a>
+                    <a className="py-1" href="/ajax.xhtml">Ejemplo Ajax XHTML</a>
+                    <a className="py-1" href="/ManagedMenu.java">Managed Bean Menu Java</a>
+                </Card>
             </div>
         </Page>
     );

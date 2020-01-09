@@ -32,7 +32,7 @@ const Information = () => {
         <p:menuitem value="Nuevo" url="/nuevo" />
         <p:menuitem value="Guardar" url="/guardar" />
     </p:submenu>
-        <p:menuitem value="Salir" actionListener="#{bean.exit}" />
+        <p:menuitem value="Salir" actionListener="#{bean.exit()}" />
 </p:menubar>`}
                             </code>
                         </pre>

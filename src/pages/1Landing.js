@@ -19,7 +19,7 @@ const Space = styled.br`
 
 const Landing = () => {
     return (
-        <Page background="linear-gradient(135deg, #209ffe 0%, #25c1fa 100%)"
+        <Page background="linear-gradient(135deg, #209ffe 0%, #343a40 100%)"
               className="d-flex justify-content-center align-items-center">
             <div className="container">
                 <div className="d-flex flex-column align-items-center" style={{position: 'relative'}}>
@@ -30,7 +30,7 @@ const Landing = () => {
                         <Subtitle className="mt-0">Manual de usuario</Subtitle>
                         <br/>
                         <p className="m-0">Ricardo Baquero</p>
-                        <p>UCE 2020</p>
+                        <p className="text-center">Universidad Central del Ecuador 2020</p>
                     </Card>
                 </div>
             </div>

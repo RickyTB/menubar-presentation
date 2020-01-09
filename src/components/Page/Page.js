@@ -4,7 +4,7 @@ import cx from 'classnames';
 
 const PageContainer = styled.div`
   min-height: 100vh;
-  background: ${props => props.background || '#209ffe'};
+  background: ${props => props.background || '#343a40'};
 `;
 
 const Page = ({children, className, ...props}) => {

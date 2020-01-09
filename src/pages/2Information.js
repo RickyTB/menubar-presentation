@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 
 import Page from "../components/Page/Page";
 import Card from "../components/Card/Card";
@@ -6,11 +6,17 @@ import Title from "../components/Title/Title";
 import Image from "../components/Image/Image";
 import menubar from '../assets/menubar.png';
 import Subtitle from "../components/Subtitle/Subtitle";
+import CodeBlock from "../components/CodeBlock/CodeBlock";
+
+const exampleCode = `<p:menubar>
+    <p:submenu label="Achivo">
+        <p:menuitem value="Nuevo" url="/nuevo" />
+        <p:menuitem value="Guardar" url="/guardar" />
+    </p:submenu>
+        <p:menuitem value="Salir" actionListener="#{bean.exit()}" />
+</p:menubar>`;
 
 const Information = () => {
-    useEffect(() => {
-        window.PR.prettyPrint();
-    }, []);
     return (
         <Page>
             <Title className="pt-4 pb-2" align="left" color="white">Menubar</Title>
@@ -25,17 +31,7 @@ const Information = () => {
                             <li>Menuitem</li>
                         </ul>
                         <Subtitle align="left">Ejemplo</Subtitle>
-                        <pre className="prettyprint" style={{borderRadius: '8px'}}>
-                            <code>
-                                {`<p:menubar>
-    <p:submenu label="Achivo">
-        <p:menuitem value="Nuevo" url="/nuevo" />
-        <p:menuitem value="Guardar" url="/guardar" />
-    </p:submenu>
-        <p:menuitem value="Salir" actionListener="#{bean.exit()}" />
-</p:menubar>`}
-                            </code>
-                        </pre>
+                        <CodeBlock code={exampleCode}/>
                     </Card>
                 </div>
                 <div className="col-md-6">

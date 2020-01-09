@@ -15,8 +15,6 @@ const Container = styled.div`
 const Menu = styled.div`
   display: flex;
   padding: 0.5rem;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
   background-color: rgba(215,245,255,0.2);
   box-shadow: 0 -4px 6px 0 rgba(0,0,0,0.1);
 `;
@@ -30,7 +28,7 @@ const CircleCard = styled(Card)`
   box-shadow: none;
   padding: 4px;
   flex-direction: row;
-  transition: border 300ms ease-out;
+  transition: border 300ms ease-out, box-shadow 300ms ease-out;
   cursor: pointer;
   
   p+p {

@@ -10,7 +10,7 @@ import Subtitle from "../components/Subtitle/Subtitle";
 const Information = () => {
     useEffect(() => {
         window.PR.prettyPrint();
-    });
+    }, []);
     return (
         <Page>
             <Title className="pt-4 pb-2" align="left" color="white">Menubar</Title>
@@ -32,7 +32,7 @@ const Information = () => {
         <p:menuitem value="Nuevo" url="/nuevo" />
         <p:menuitem value="Guardar" url="/guardar" />
     </p:submenu>
-        <p:menuitem value="Salir" url="https://www.google.com" />
+        <p:menuitem value="Salir" actionListener="#{bean.exit}" />
 </p:menubar>`}
                             </code>
                         </pre>
